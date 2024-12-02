@@ -7,23 +7,23 @@ const tutorialData = [
   {
     id: 1,
     h2: "Dedica muchas horas",
-    color: "#ddd",
+    color: "#fff",
     img: "./src/assets/img/mujer.jpg",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel efficitur felis, et ultricies neque. Sed sed libero eget velit ultricies faucibus. Nullam tincidunt, nunc vel viverra scelerisque, ipsum mauris bibendum ex, et consequat ex velit vel velit.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel efficitur felis, et ultricies neque. Sed sed libero eget velit ultricies faucibus.",
   },
 
   {
     id: 2,
     h2: "Programa proyectos propios",
-    color: "#cccccc",
+    color: "#fff",
     img: "./src/assets/img/hombre.jpg",
-    text: "Proin vel efficitur felis, et ultricies neque. Sed sed libero eget velit ultricies faucibus. Nullam tincidunt, nunc vel viverra scelerisque, ipsum mauris bibendum ex, et consequat ex velit vel velit.",
+    text: "Proin vel efficitur felis, et ultricies neque. Sed sed libero eget velit ultricies faucibus. Nullam tincidunt, nunc vel viverra scelerisque, ",
   },
 
   {
     id: 3,
     h2: "Procura descansar",
-    color: "#aaaaaa",
+    color: "#fff",
     img: "./src/assets/img/niño.jpg",
     text: "Sed sed libero eget velit ultricies faucibus. Nullam tincidunt, nunc vel viverra scelerisque, ipsum mauris bibendum ex, et consequat ex velit vel velit.",
   },
@@ -57,6 +57,8 @@ function App() {
           key={tutorialData[currentCardIndex].id}
           handlePrevius= {handlePrevius}
           handleNext={handleNext}
+          currentCardIndex={currentCardIndex}
+          totalCards = {tutorialData.length}
         />
       </div>
     </>

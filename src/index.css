@@ -43,7 +43,9 @@ p {
 }
 
 .cardIndex p{
-    font-size: 0.5rem;
+    font-size: 2rem !important;
+    font-weight: bolder;
+    color: black !important;
 }
 
 .botones {

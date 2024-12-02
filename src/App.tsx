@@ -57,7 +57,7 @@ function App() {
           key={tutorialData[currentCardIndex].id}
           handlePrevius= {handlePrevius}
           handleNext={handleNext}
-          currentCardIndex={currentCardIndex}
+          currentCardIndex={currentCardIndex + 1}
           totalCards = {tutorialData.length}
         />
       </div>

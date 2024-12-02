@@ -1,50 +1,20 @@
-# React + TypeScript + Vite
+# Sprint 5 Onboarding
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el proyecto de *Onboarding* para el Sprint 5. Es un proyecto desarrollado en **React**, donde se utilizan componentes, estado y otros conceptos clave de React para crear una aplicación interactiva. El objetivo de este proyecto es ofrecer una experiencia sencilla pero completa de interacción con tarjetas que contienen contenido visual y texto, con la funcionalidad de navegación a través de botones.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación tiene como objetivo mostrar contenido en tarjetas, cada una con su propio título, color de fondo, imagen y texto. Los usuarios pueden navegar entre las tarjetas usando los botones de **anterior** y **siguiente**.
 
-## Expanding the ESLint configuration
+### Características
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Interfaz simple**: Tarjetas con imágenes, textos y un título.
+- **Navegación**: Los usuarios pueden navegar entre las tarjetas usando los botones de anterior y siguiente.
+- **React**: El proyecto se ha desarrollado utilizando **React** para gestionar el estado de la aplicación y renderizar componentes de manera eficiente.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Para empezar, primero debes clonar este repositorio a tu máquina local:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```bash
+git clone https://github.com/LuisAlejandroCortesGalan/Sprint-5-OnBoarding.git

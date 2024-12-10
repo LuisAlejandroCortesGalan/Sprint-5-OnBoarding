@@ -1,0 +1,169 @@
+
+main {
+  background-image: 
+  linear-gradient(
+    to top right, #8B5CF6, #EC4899
+  );
+
+  min-height: 100vh;
+  margin: 0;
+  display: block; /* Usamos flex */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  font-family: monospace;
+  position: relative;
+}
+
+.slider {
+  position: absolute !important;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+
+    /* Centramos el slider usando transform */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+  position: absolute !important;
+  width: 300px !important;
+  min-height: 600px !important;;
+  text-align: start;
+  background-color: white !important;
+  border-radius: 25px !important;
+  transition: 0.5s !important;
+  left: calc(50% - 110px) !important;
+  top: 0 !important;
+  border: 1px solid black !important;
+
+  img {
+    border-radius: 25px 25px 0 0 !important;
+    height: 50vh !important;
+  }
+}
+
+.cardText {
+  padding: 10px !important;
+}
+
+.divButtons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  gap: 20px !important;
+  position: relative;
+  top: 550px;
+  left: 45px;
+  width: 220px;}
+
+.customImage {
+  border-radius: 25px 25px 0 0 !important;
+  object-fit: cover !important;
+  border-bottom: 1px solid black !important;
+  height: 50vh !important;
+}
+
+h2 {
+  font-size: 1.3rem !important;
+}
+
+p {
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  color: grey !important;
+}
+
+.div-text {
+  padding: 10px 25px !important;
+}
+
+.borde {
+  border-radius: 20px !important;
+  font-size: 20px !important;
+  transition: background-color 0.3s, color 0.3s !important;
+}
+
+.borde:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.cardIndex p {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  color: black !important;
+}
+
+.botones {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.point {
+  width: 5px !important;
+  height: 5px !important;
+  background-color: grey !important;
+  border: 1px solid grey !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+}
+
+.active {
+  width: 10px !important;
+  height: 5px !important;
+  background-color: black !important;
+  border: 1px solid black !important;
+  border-radius: 5px !important;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.1rem !important; /* Reducimos el tamaño del título */
+  }
+
+  p {
+    font-size: 0.9rem !important; /* Reducimos el tamaño del texto */
+  }
+
+  .borde {
+    font-size: 16px !important; /* Reducimos el tamaño de los botones */
+  }
+}
+
+@media (max-width: 576px) {
+  .slider {
+    height: 400px !important; /* Reducimos aún más la altura del slider en pantallas muy pequeñas */
+  }
+
+  .card {
+    width: 240px !important; /* Reducimos aún más el tamaño de las tarjetas */
+    min-height: 400px !important;
+    img {
+      height: 30vh !important; /* Reducimos la altura de la imagen */
+    }
+  }
+
+  .divButtons {
+    width: 180px !important; /* Ajustamos el tamaño de los botones */
+    gap: 10px !important; /* Reducimos el espacio entre los botones */
+    top: 350px;
+    left: 10px !important;
+  }
+
+  h2 {
+    font-size: 0.9rem !important; /* Ajustamos el tamaño del título para pantallas pequeñas */
+  }
+
+  p {
+    font-size: 0.8rem !important; /* Reducimos el tamaño del texto para pantallas pequeñas */
+  }
+
+  .borde {
+    font-size: 14px !important; /* Reducimos el tamaño de los botones */
+  }
+}
+
